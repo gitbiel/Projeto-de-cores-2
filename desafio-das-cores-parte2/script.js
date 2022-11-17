@@ -1,11 +1,15 @@
 const transparentColor = document.querySelector("#transparent-color");
+const body = document.querySelector("body")
 const formContainer = document.querySelector("#form-container");
 const elipsesContainer = document.querySelector('.elipses-container');
 const bigCircle = document.querySelector("#circle");
 const inputColor = document.querySelector("#hexadecimal");
-const whiteInput = document.querySelector("#white-input");
 const btnConfirmar = document.querySelector("#btnConfirmar");
 const labelsColor = document.querySelectorAll(".form input[name='label-color']");
+
+body.onsubmit =(e) => {
+  e.preventDefault()
+}
 
 function enableButtonSubmit() {
   btnConfirmar.disabled = false;
